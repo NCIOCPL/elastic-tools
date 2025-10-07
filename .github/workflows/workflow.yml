@@ -14,6 +14,9 @@ on:
   ## Any pull request. Yes the syntax looks weird
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   test:
     name: Test the library on OS ${{matrix.operating-system}}
